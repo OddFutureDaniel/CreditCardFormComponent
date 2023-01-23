@@ -1,8 +1,9 @@
 .CreditFormContainer {
-  background-color: #394451;
-  box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+  background-color: #252525;
+  box-shadow: 0 2px 3px rgb(25 25 25 / 70%), 0 0 0 1px rgb(25 25 25 / 30%);
   border-radius: 5px;
   width: 20em;
+  min-width: 35vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -12,7 +13,7 @@
 .credit-Form {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   height: auto;
   width: 85%;
   padding: 0.7em;
@@ -20,11 +21,12 @@
 
 .input {
   width: 80%;
-  height: auto;
+  height: 1.7em;
   border-radius: 5px;
-  border: 1px solid #7a97a1;
-  background-color: #7a97a1;
-  color: rgb(0, 0, 0);
+  border: 1px solid #505050;
+  background-color: #505050;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 2px 3px rgb(10 10 10 / 70%), 0 0 0 1px rgb(10 10 10 / 10%);
 }
 
 .labell {
@@ -33,20 +35,23 @@
   flex-wrap: nowrap;
   align-items: center;
   width: 100%;
+  margin-bottom: 0.5em;
 }
 
 .label2 {
   display: flex;
   align-items: center;
+  margin-right: 0.1em;
 }
 
 .input2 {
-  height: auto;
+  height: 1.7em;
   border-radius: 5px;
-  border: 1px solid #7a97a1;
-  background-color: #7a97a1;
-  color: rgb(0, 0, 0);
+  border: 1px solid #505050;
+  background-color: #505050;
+  color: rgb(255, 255, 255);
   width: 3em;
+  box-shadow: 0 2px 3px rgb(10 10 10 / 70%), 0 0 0 1px rgb(10 10 10 / 10%);
 }
 
 p {
@@ -67,5 +72,18 @@ p {
 }
 
 ::placeholder{
-    color: #323434;
+    color: #afafaf;
+}
+
+.submitButton{
+    margin-top: 0.5em;
+    border: 1px solid #81d8d0;
+    background-color: #81d8d0;
+    border-radius: 5px;
+    height: 2.2em;
+    width: 8em;
+}
+
+@media (max-width:700px){
+
 }

@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Hello from App.js</p>
+      <h2>Payment Form</h2>
         <CreditCard/>
       </header>
     </div>

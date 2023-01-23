@@ -3,11 +3,11 @@ import "./CreditCard.css";
 
 function CreditCard() {
   const [state, setState] = useState({
-    chName: " ",
-    cardNumber: " ",
-    expirymonth: " ",
-    expiryyear: " ",
-    cvv: " ",
+    chName: "",
+    cardNumber: "",
+    expirymonth: "",
+    expiryyear: "",
+    cvv: "",
   });
 
   const handleChange = (e) => {
@@ -30,7 +30,7 @@ function CreditCard() {
             name="chName"
             value={state.chName}
             onChange={handleChange}
-            placeholder={"cardholder name"}
+            placeholder={"Cardholder Name"}
           />
         </label>
         <label className="labell">
@@ -42,6 +42,7 @@ function CreditCard() {
             value={state.cardNumber}
             onChange={handleChange}
             placeholder={"Card Number"}
+            maxLength="16"
           />
         </label>
         <div className="expiry">
@@ -53,6 +54,7 @@ function CreditCard() {
               value={state.expirymonth}
               onChange={handleChange}
             >
+              <option value="--">--</option>
               <option value="01">01</option>
               <option value="02">02</option>
               <option value="03">03</option>
@@ -75,6 +77,7 @@ function CreditCard() {
               value={state.expiryyear}
               onChange={handleChange}
             >
+              <option value="--">--</option>
               <option value={new Date().getFullYear()}>23</option>
               <option value={new Date().getFullYear() + 1}>24</option>
               <option value={new Date().getFullYear() + 2}>25</option>
@@ -92,9 +95,13 @@ function CreditCard() {
               name="cvv"
               value={state.cvv}
               onChange={handleChange}
+              placeholder={"CVV"}
+              defaultValue={""}
+              maxLength="3"
             />
           </label>
         </div>
+        <button className="submitButton" onClick={handleSubmit}>Submit</button>
       </form>
       {/* <h5>Cardholder name: {state.chName}</h5>
       <h5>Card Number: {state.cardNumber}</h5>
