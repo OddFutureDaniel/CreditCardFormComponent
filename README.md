@@ -1,3 +1,9 @@
+# Credit Card Form Component 
+
+A React form component for handling payment information 
+
+By Daniel Rogerson
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
